@@ -1,0 +1,21 @@
+import React from 'react';
+import Hello from './Hello';
+
+function App() {
+  const name = 'react';
+  const style = {
+    backgroundColor : 'black',
+    color : 'aqua',
+    fontSize : 24,
+    padding : '1rem' // 다른 단위 사용 시 문자열로 설정
+  }
+
+  return (
+    <>
+      <Hello />
+      <div style = {style}>{name}</div>
+    </>
+  );
+}
+
+export default App;
